@@ -1,24 +1,26 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 // Copyright 2022 OpenSun
 
 int main()
 {
-  char opt;
-  char calc;
-  int num1;
-  int num2;
+  char opt[1], cal[] = "c", ver[] = "v";
+  char calc[1], add[] = "+", sub[] = "-", mul[] = "*", div[] = "/";  
+  int num1, num2, num3, num4;
   int eq;
   printf("OpenCalc by Sun Open|Microsystems \n\n");
-  printf("Select; for calc-(1), for ver-(2) \nNumber: ");
-  scanf("%d", &opt);
-  if (opt == 1)
+ reopt:
+  printf("Select; (c)-calculation | (v)-version \nNumber: ");
+  scanf("%s", &opt);
+  if (strcmp(opt,cal)==0)
     {
-      printf("\nSelect; 1-[+] | 2-[-] | 3-[x] | 4-[/] \nNumber: ");
-      scanf("%d", &calc);
-      if (calc == 1)
+    recalc:
+      printf("\nSelect; | + | - | * | / |: ");
+      scanf("%s", &calc);
+      if (strcmp(calc,add)==0)
 	{
       printf("Enter Number 1: ");
       scanf("%d", &num1);
@@ -27,7 +29,7 @@ int main()
       eq = num1 + num2;
       printf("Equal: %d \n", eq);
 	}
-      else if (calc == 2)
+      else if (strcmp(calc,sub)==0)
 	{
       printf("Enter Number 1: ");
       scanf("%d", &num1);
@@ -36,7 +38,7 @@ int main()
       eq = num1 - num2;
       printf("Equal: %d \n", eq);
 	}
-      else if (calc == 3)
+      else if (strcmp(calc,mul)==0)
 	{
       printf("Enter Number 1: ");
       scanf("%d", &num1);
@@ -45,7 +47,7 @@ int main()
       eq = num1 * num2;
       printf("Equal: %d \n", eq);
 	}
-      else if (calc == 4)
+      else if (strcmp(calc,div)==0)
 	{
       printf("Enter Biggest Number: ");
       scanf("%d", &num1);
@@ -56,16 +58,18 @@ int main()
 	}
       else
 	{
-      printf("Error: please select 1, 2, 3 or 4 - quit \n");
+      printf("\nError: please select +, -, * or / \n");
 	}
+      goto recalc;
     }
-  else if (opt == 2)
+  else if (strcmp(opt,ver)==0)
     {
-      printf("version: opencalc-ver-0.0_3 \n");
+      printf("\nversion: opencalc-ver-0.0_4 \n\n");
     }
   else
     {
-      printf("Error: please select 1 or 2 - quit \n");
-    }
+      printf("\nError: please select c or v \n\n");
+      goto reopt;
+    }  
   return 0;
 }
