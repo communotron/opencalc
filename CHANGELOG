@@ -1,0 +1,25 @@
+
+	##ver-0.0_3## - Important Update
+
+	News:
+
+	1- Added make install, uninstall and clean command.
+	2- Added version checker.
+	3- Added menu for selecting calculation or version checking.
+	4- + Minor updates (fix, etc...)
+
+	Goals for ver-0.0_4:
+
+	1- Adding more than two number calculating option.
+	2- Adding new calculation types.
+	3- Adding recalculation mechanism.
+
+	Goals for ver-0.1 - Big Update:
+
+	1- Adding mini GUI (opencalc pack will be doesn't include this feature
+	   for extra performance. GUI option will be added downloadable option.)
+	2- Removing option numbers (new selection mechanism).
+	3- New ideas will be added in other versions.
+
+
+	"(Copyright 2022 OpenSun)"
