@@ -1,0 +1,46 @@
+---            ---
+--OpenCalc 0.0_3--
+---            ---
+
+OpenCalc is terminal based open-source calculator for GNU/Linux.
+
+
+Instruction Manual:
+
+Four options available in this version for calculating.
+
+(1) for addition,
+(2) for subtraction,
+(3) for multiplication,
+(4) for division.
+
+Please type 1, 2, 3 or 4 number for selecting calculating method and calculate anything you want.
+You can only calculate two number in this version. We working to solve this problem in ver-0_4.
+
+
+--Installation--
+
+make - (for compiling binary file. (After compiling binary file will be moved to bin directory.))
+
+make install - (for installing software to /usr/bin.)
+
+make clean - (for removing bin/opencalc.)
+
+make uninstall - (for uninstalling software from /usr/bin.)
+
+
+- For installing this software, enter this commands:
+
+make && sudo make install
+
+- For uninstalling this software, enter this commands:
+
+make clean && sudo make uninstall
+
+
+--License--
+
+All rights reserved under GPLv3. Please read COPYING section in /opencalc/COPYING.
+
+
+"(Copyright ©2022 OpenSun)"
