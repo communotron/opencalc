@@ -1,0 +1,33 @@
+
+	##ver-0.0_5## - Important Update
+
+	Update Infos:
+
+	1- Added man page. (Goal achieved.)
+	2- Added help command. (Goal achieved.)
+	3- Menu selection system was changed as command selection system with shell
+	script.
+	4- Now OpenCalc has folder directory and binary file directory changed to
+	/usr/local/bin.
+	5- Other features (optimizations, etc.).
+
+	Goals for ver-0.0_6:
+
+	1- Calculation saving system.
+	2- Exit command for quitting opencalc
+	3- Language option (will not work in ver-0.0_6).
+	5- Other simple features.
+
+	Goals for ver-0.1 - Big Update:
+
+	1- Adding simple UI (opencalc pack will be doesn't include this feature for
+	   extra performance. UI option will be added downloadable option).
+	2- Adding OpenCalc package to distro repositories. This feature will chan-
+	ge many things in source.
+	3- Adding probability calculation.
+	4- Adding new calculation mechanic for complicated calculations.
+	5- Adding cross platform support.
+	6- New ideas will be added in other versions.
+
+
+	"(Copyright 2022 OpenSun Project)"
