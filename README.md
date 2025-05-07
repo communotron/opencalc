@@ -2,6 +2,7 @@
 This repository was mine. I wrote it years ago, in my other account. Now I merged it with this one.
 THIS PROJECT WON'T HAS BEEN ARCHIVED AND WON'T GET UPDATE SOON. 
 
+# Legacy README.md from old account
 ---            ---
 --OpenCalc 0.0_5--
 ---            ---
